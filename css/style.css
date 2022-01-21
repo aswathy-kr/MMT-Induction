@@ -36,15 +36,10 @@ body {
 .logo {
 	width: 50px;
 	margin-right: 10px;
-	/* flex-shrink: 4; */
-	/* border: 2px solid yellow; */
 }
 
 .logocontainer h1 {
 	color: beige;
-	/* flex-shrink: 3; */
-	/* position: relative; 
-    left : -50px; */
 }
 
 .navcontainer ul {
@@ -52,11 +47,9 @@ body {
 	list-style-type: none;
 	align-items: center;
 	justify-content: center;
-	/* flex-wrap: wrap; */
 }
 
 .navcontainer li {
-	/* border: 2px solid yellow; */
 	justify-content: space-between;
 	margin: 10px;
 }
@@ -88,13 +81,14 @@ p {
 	background-size: cover;
 	background-position: center;
 	background-color: rgba(10, 10, 10, 0.5);
+	-webkit-mask-image: linear-gradient(to top, black, transparent);
+	mask-image: linear-gradient(to top, black, transparent);
 	height: 100vh;
-	color: rgb(10, 10, 10);
+	color: rgba(0, 0, 0, 1);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	/* position: relative; */
 	margin-bottom: 20px;
 	z-index: -1;
 }
@@ -102,7 +96,7 @@ p {
 .bgcontent h2 {
 	font-size: 46px;
 	/* border: 2px solid salmon; */
-	margin: -20px 0 20px;
+	mix-blend-mode: multiply;
 }
 
 .bgcontent p {
