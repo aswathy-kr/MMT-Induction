@@ -1,0 +1,23 @@
+{
+  "name": "Front End Journey App",
+  "version": "1.0.0",
+  "description": "App about my Front end journey",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aswathy-kr/MMT-Induction.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aswathy-kr/MMT-Induction/issues"
+  },
+  "homepage": "https://github.com/aswathy-kr/MMT-Induction#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Open Sans", sans-serif; }
+
+.nav {
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px; }
+  .nav-container ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center; }
+  .nav-container li {
+    justify-content: space-between;
+    margin: 10px; }
+  .nav-container a {
+    text-decoration: none;
+    color: #e4e450; }
+  .nav-container a:hover {
+    color: #d11111;
+    font-weight: bold; }
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .logo-container .logo {
+    width: 50px;
+    margin-right: 10px; }
+  .logo-container h1 {
+    color: beige; }
+
+.content {
+  border: 1px solid;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 5px 10px #888888; }
+  .content p {
+    line-height: 1.3em; }
+
+.bg-container {
+  background-image: linear-gradient(rgba(10, 10, 10, 0.4), rgba(10, 10, 10, 0.2)), url("https://images.unsplash.com/photo-1593642531955-b62e17bdaa9c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(10, 10, 10, 0.5);
+  height: 100vh;
+  color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  z-index: -1; }
+  .bg-container .bg-content {
+    width: 100%; }
+    .bg-container .bg-content h2 {
+      font-size: 46px; }
+    .bg-container .bg-content p {
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      color: beige; }
+
+#social-icons {
+  text-align: center; }
+  #social-icons .fa-facebook {
+    border: 2px solid #3b5998;
+    color: #3b5998;
+    border-radius: 100%;
+    font-size: 28px;
+    line-height: 40px;
+    margin: 5px;
+    width: 44px; }
+  #social-icons .fa-twitter {
+    border: 2px solid #00aced;
+    color: #00aced;
+    border-radius: 100%;
+    font-size: 28px;
+    line-height: 40px;
+    margin: 5px;
+    width: 44px; }
+  #social-icons .fa-instagram {
+    border: 2px solid #833ab4;
+    color: #833ab4;
+    border-radius: 100%;
+    font-size: 28px;
+    line-height: 40px;
+    margin: 5px;
+    width: 44px; }
+  #social-icons .fa-linkedin {
+    border: 2px solid #007bb6;
+    color: #007bb6;
+    border-radius: 100%;
+    font-size: 28px;
+    line-height: 40px;
+    margin: 5px;
+    width: 44px; }
+
+.f-links {
+  text-align: center; }
+  .f-links a {
+    color: #771c1c;
+    text-decoration: none;
+    margin: 0 10px; }
+
+.copy-rights p {
+  text-align: center;
+  color: #3d1b1b; }
+
+@media screen and (max-width: 600px) {
+  .nav-container {
+    height: 200px;
+    padding-top: 15px; }
+    .nav-container ul {
+      flex-direction: column; } }
