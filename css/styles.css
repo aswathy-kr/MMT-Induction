@@ -73,13 +73,23 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 
 .content {
-  border: 1px solid;
-  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
   margin: 20px;
-  box-shadow: 5px 10px #8888885c;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
   border-radius: 10px; }
   .content p {
-    line-height: 1.3em; }
+    line-height: 1.3em;
+    color: #212121;
+    font-size: 14px; }
+  .content .start-btn {
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 12px 18px; }
 
 #social-icons {
   text-align: center;
@@ -126,7 +136,8 @@ body {
 
 .copy-rights p {
   text-align: center;
-  color: #3d1b1b; }
+  color: #3d1b1b;
+  padding: 20px 0; }
 
 @media screen and (max-width: 600px) {
   .nav-container {
