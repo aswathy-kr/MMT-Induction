@@ -27,11 +27,8 @@
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
 	.blog-heading {
-		padding: 220px 12px 12px 28px;
-	}
-	.read-more {
-		justify-content: flex-start;
+		padding: 120px 12px 12px 28px;
 	}
 }

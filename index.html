@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/styles.css" type="text/css">
-    <!-- <meta http-equiv="refresh" content="5; url=http://example.com"> -->
     <title>Home | FrontEnd Journey</title>
 
 </head>
@@ -17,21 +16,18 @@
         <nav class="nav-container">
                 <div class="logo-container">
                     <img src="./img/logo.png" class="logo">
-                    <h1>FrontEnd Journey</h1>
+                    <h1>WebDev Journey</h1>
                 </div>
 
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a class="active" href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="./html/learnings.html">Learnings</a>
                     </li>
                     <li>
-                        <a href="./html/blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
+                        <a href="./html/resources.html">Resources</a>
                     </li>
 
                 </ul>
@@ -40,12 +36,12 @@
     <main>
         <div class="bg-container">
             <div class="bg-content">
-                <h2>Welcome To My Website</h2>
-                <p>The Journey of a Thousand miles begins with <strong> A SINGLE STEP.</strong></p>
-                <p>Come join me in my journey</p>
+                <h2>Welcome to my website</h2>
+                <p>The journey of a thousand miles begins with <strong> A SINGLE STEP.</strong></p>
+                <p>Come join me in my journey </p>
             </div>
         </div>
-        <article>
+        <article class="container">
             <section class="content">
                 <p>This website is aimed towards helping really beginners in embarking their path down web development.</p>
                 <h3>Introduction</h3>
@@ -55,30 +51,35 @@
                 <h3>Where To Start ?</h3>
                 <p>There are A LOT of languages and tools you can use to build for the web. All of them have their benefits, and are maintained by tons of super smart people. While this is great for pushing the web forward, it’s confusing and overwhelming to start.</p>
                 <blockquote class="block-quote">Learn HTML, CSS and Javascript exclusively.</blockquote>
-                <p>If you know HTML, CSS, and Javascript on a deep level, you will be able to create pretty much anything on the web.</p>
+                <p>While <span class="bold-text">HTML provides the structure</span> for a website and <span class="bold-text">CSS allows you to control the presentation</span> of a site, the <span class="bold-text">JavaScript programming language gives you the tools that you need to alter the behavior of different elements</span> that are found on a website page. If you know HTML, CSS, and Javascript on a deep level, you will be able to create pretty much anything on the web.</p>
                 <h3>Tools To Use</h3>
                 <p>Next up, download a good software to use as your code editor. Below are a few :
                     <ul class="inner-para">
-                        <li class="editor-item"><a href="https://code.visualstudio.com/download" target="_blank">VsCode</a></li>
+                        <li class="editor-item"><a href="https://code.visualstudio.com/download" target="_blank">VSCode</a></li>
                         <li class="editor-item"><a href="https://atom.io/" target="_blank">Atom.io</a></li>
                         <li class="editor-item"><a href="https://www.sublimetext.com/3" target="_blank">Sublime Text</a></li>
                     </ul>
                 </p>
                 <p class="inner-para">
-                    After that you’ll need a terminal to run commands and do various other things. MacOs already has a inbuilt <span class="bold-text">Terminal</span> app.  Click the Launchpad icon in the Dock, type Terminal in the search field, then click Terminal. For Windows users, install Unix-like terminals that execute bash commands. Check out <a href="https://medium.com/ironhack/tools-for-web-developers-on-windows-2a8c3c09014a" target="_blank">this.</a></p>
+                    After that you’ll need a terminal to run commands and do various other things. MacOs already has a inbuilt <span class="bold-text">Terminal</span> app.  Click the Launchpad icon in the Dock, type Terminal in the search field, then click Terminal. For Windows users, install Unix-like terminals that execute bash commands. Check out <a href="https://medium.com/ironhack/tools-for-web-developers-on-windows-2a8c3c09014a" target="_blank">this</a>.</p>
                 <p class="inner-para">Lastly, you need a browser to test your website in, so grab the latest version of Google Chrome.
                 </p>            
             </section>
+            
             <section class="content-box">
                 <article class="content content-border">
-                <p>Let's learn HTML</p>
-                <a class="start-btn" href="learnHtml.html">Start</a>
+                <p><span class="bold-text">HTML</span> stands for <span class="bold-text">Hypertext Markup Language</span>. It is a standard markup language for building static web applications and websites. This is a relatively simplistic yet powerful programming language that allows web developers and website owners to create the structure of their websites.</p>
+                <a class="start-btn" href="./html/learnHtml.html">Learn More >></a>
             </article>
 
             <article class="content content-border">
-                <p>Let's learn CSS</p>
-                <a class="start-btn" href="learnCSS.html">Start</a>
+                <p><span class="bold-text">CSS</span> stands for <span class="bold-text">Cascading Style Sheets</span>. It is a style sheet language that’s focused almost entirely on improving the presentation of HTML elements. While CSS is a static programming language, it can be used to make your website appear visually pleasing and modern. </p>
+                <a class="start-btn" href="./html/learnCSS.html"> Learn More >></a>
                 </article>
+                <article class="content content-border">
+                    <p><span class="bold-text">Javascript</span> is among the most important programming languages for website owners who want to make their site more interactive, which makes this the most complex of the three standard programming languages. With this tool, you can add a layer of interactivity to the CSS and HTML elements on your website, which is highly recommended if you want your website to appeal to the modern customer. </p>
+                    <a class="start-btn" href="./html/learnJavascript.html">Learn More >></a>
+                </article>    
             </section>
 
         </article>
@@ -93,10 +94,9 @@
         </div>
         <br />
         <div class="f-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="/html/blog.html">Blog</a>
-            <a href="#">Contact</a>
+            <a class="active" href="#">Home</a>
+            <a href="/html/learnings.html">Learnings</a>
+            <a href="/html/resources.html">Resources</a>
         </div>
         <br />
         <div class="copy-rights">

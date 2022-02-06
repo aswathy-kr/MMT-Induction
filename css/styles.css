@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,12 +7,20 @@
 body {
   font-family: "Roboto", sans-serif; }
 
-.nav-container {
-  background-color: #222;
+.container, .nav-container, #social-icons {
+  width: 80%;
+  margin: 0 auto; }
+
+header {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1; }
+
+.nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,13 +32,15 @@ body {
     justify-content: center; }
   .nav-container li {
     justify-content: space-between;
-    margin: 10px; }
+    margin: 8px; }
   .nav-container a {
     text-decoration: none;
-    color: #e0fbfc; }
+    font-size: 16px;
+    color: #212121;
+    transition: color 0.3s ease-in; }
+  .nav-container a.active,
   .nav-container a:hover {
-    color: #ee6c4d;
-    font-weight: bold; }
+    color: #ee6c4d; }
 
 .logo-container {
   display: flex;
@@ -39,15 +49,13 @@ body {
   .logo-container .logo {
     width: 50px;
     margin-right: 10px; }
-  .logo-container h1 {
-    color: beige; }
 
 .bg-container {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.4), rgba(10, 10, 10, 0.2)), url("https://images.unsplash.com/photo-1593642531955-b62e17bdaa9c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("https://images.unsplash.com/photo-1593642531955-b62e17bdaa9c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: rgba(10, 10, 10, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   height: 100vh;
   color: #f9f9f9;
   display: flex;
@@ -55,8 +63,7 @@ body {
   align-items: center;
   text-align: center;
   margin-bottom: 20px;
-  padding: 20px;
-  z-index: -1; }
+  padding: 20px; }
   .bg-container .bg-content {
     width: 100%; }
     .bg-container .bg-content h2 {
@@ -75,6 +82,7 @@ body {
 .content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin: 20px;
   border-radius: 10px; }
   .content p {
@@ -83,26 +91,30 @@ body {
     font-size: 16px;
     margin: 18px 0; }
   .content .start-btn {
-    border: 2px solid grey;
+    border: 2px solid seashell;
     border-radius: 10px;
     font-size: 18px;
     text-decoration: none;
     padding: 12px 18px;
-    width: fit-content; }
+    width: fit-content;
+    color: seashell;
+    background-color: #219ebc; }
+  .content .start-btn:hover {
+    background-color: #f4f1de;
+    color: #219ebc; }
   .content .block-quote {
     border-left: 4px solid #32c4c4;
     margin-left: 24px;
     margin-bottom: 12px;
-    padding: 14px 12px;
-    font-weight: bold; }
+    padding: 14px 12px; }
   .content ul {
     padding-left: 18px; }
   .content .editor-item {
     font-size: 16px; }
   .content .inner-para {
     margin-top: -14px; }
-  .content .inner-para .bold-text {
-    font-weight: 700px; }
+  .content .bold-text {
+    font-weight: 700; }
 
 .content-border {
   padding: 16px 24px;
@@ -111,7 +123,8 @@ body {
 
 #social-icons {
   text-align: center;
-  margin-top: 50px; }
+  margin-top: 50px;
+  border: 2px solid red; }
   #social-icons .fa-facebook {
     border: 2px solid #3b5998;
     color: #3b5998;
@@ -151,17 +164,20 @@ body {
     color: #771c1c;
     text-decoration: none;
     margin: 0 10px; }
+  .f-links .active {
+    color: #ee6c4d; }
 
 .copy-rights p {
   text-align: center;
   color: #3d1b1b;
   padding: 20px 0; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
+  .container, .nav-container, #social-icons {
+    width: 100%; }
   .nav-container {
-    height: 200px;
-    padding-top: 15px; }
-    .nav-container ul {
-      flex-direction: column; }
+    height: 100px;
+    padding-top: 8px;
+    display: block; }
   .content {
     flex-direction: column; } }
