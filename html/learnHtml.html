@@ -36,21 +36,73 @@
         </nav>
     </header>
     <main class="container learnhtml-box">
+        <section class="content">
         <h2>HTML: HyperText Markup Language</h2>
         <p>HTML (Hypertext Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables. As the title suggests, this article will give you a basic understanding of HTML and its functions.</p>
         <p>"Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.</p>
         
         <h3>So what is HTML ?</h3>
         <p>HTML is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on. </p>
-        
-        <h4>Anatomy of an HTML element</h4>
-        <p>The main parts of our element are as follows:</p>
+        <p>This is the basic template or barebone structure of HTML.</p>
+        <div class="code-container">
+        <pre>
+            <code>            
+                <span>&lt;!DOCTYPE html></span>&nbsp;
+                <span>&lt;html lang="en">
+                <span>&lt;head</span>>
+                <span>&lt;meta charset="UTF-8"></span>
+                <span>&lt;title>Document</span><span>&lt;/title></span>
+                <span>&lt;head></span>
+                <span>&lt;/head></span>
+                <span>&lt;body></span>
+                <span>&lt;/body></span>
+            </code>
+        </pre>
+        </div>
+        <div class="list-items">
+        <p>Here, we have the following:</p>
         <ol>
-            <li>The opening tag: This consists of the name of the element (in this case, p), wrapped in opening and closing angle brackets. This states where the element begins or starts to take effect — in this case where the paragraph begins.</li>
-            <li>The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the paragraph ends. Failing to add a closing tag is one of the standard beginner errors and can lead to strange results.</li>
-            <li>The content: This is the content of the element, which in this case, is just text.</li>
-            <li>The element: The opening tag, the closing tag, and the content together comprise the element.</li>
+            <li><code>&lt;!DOCTYPE html></code> </li>
+            <p>This tag is used to inform the browser about the version of HTML used in the document. It is called as the document type declaration (DTD). Technically &lt;!DOCTYPE > is not a tag/element, it's just an instruction to the browser about the document type. It is a null element which does not contain the closing tag, and must not include any content within it.</p>
+            <li><code>&lt;html>&lt;/html></code></li>
+            <p>This element wraps all the content on the entire page and is sometimes known as the root element. It is used to indicate the beginning and end of an HTML element in an HTML document. As part of an HTML element, HTML tags help web browsers convert HTML documents into web pages.</p>
+            <li><code>&lt;head>&lt;/head></code></li>
+            <p>This element is used to contain specific information about a web page, often referred to as metadata. It is used to define the head portion of the document which contains information related to the document. </p>
+            <li><code>&lt;meta charset="UTF-8"></code></li>
+                <p>This tells the browser to use the utf-8 character encoding when translating machine code into human-readable text and vice versa to be displayed in the browser. Essentially, it can now handle any textual content you might put on it. There is no reason not to set this and it can help avoid some problems later on.</p>
+            <li><code>&lt;title>&lt;/title></code></li>
+            <p>This tag that allows you to give a web page a title. This title can be found in the browser title bar, as well as in the search engine results pages (SERP). It is also used to describe the page when you bookmark/favorite it.</p>
+            <li><code>&lt;body>&lt;/body></code></li>
+            <p>This element contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else.
+            </p>
         </ol>
+        </div>
+        &nbsp;
+        <h4>Anatomy of an HTML element</h4>    
+        &nbsp;
+        <figure class="image-container">
+            <img src="../img/HTML Element.png" alt="An HTML element">
+        </figure>
+        <p>The main parts of an HTML element are as follows:</p>
+        <div class="list-items">
+        <ol>
+            <li><span class="bold-text">The opening tag:</span>
+                 This consists of the name of the element (in this case, p), wrapped in opening and closing angle brackets. This states where the element begins or starts to take effect — in this case where the paragraph begins.</li>
+            <li><span class="bold-text">The closing tag:</span> This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the paragraph ends. Failing to add a closing tag is one of the standard beginner errors and can lead to strange results.</li>
+            <li><span class="bold-text">The content:</span> This is the content of the element, which in this case, is just text.</li>
+            <li><span class="bold-text">The element:</span> The opening tag, the closing tag, and the content together comprise the element.</li>
+        </ol>
+        </div>
+        
+
+
+
+
+
+
+
+
+    </section>
     </main>
     
     <footer>

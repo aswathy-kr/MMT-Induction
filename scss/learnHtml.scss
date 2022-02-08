@@ -3,4 +3,40 @@
 	top: 100px;
 	margin-bottom: 150px;
 	z-index: 0;
+
+	.code-container {
+		background-color: #272822;
+		color: #f8f8f2;
+		margin: 16px;
+		width: auto;
+		border-radius: 10px;
+		line-height: 1.4em;
+		text-align: left;
+		overflow: auto;
+		// span {
+		// 	padding: 0;
+		// }
+	}
+	.list-items {
+		line-height: 1.4em;
+		color: #212121;
+		font-size: 16px;
+		margin: 0 12px;
+	}
+	.image-container img {
+		//border-radius: 10px;
+		width: 100%;
+		height: auto;
+		margin: 12px 0;
+		//border: 2px solid red;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.learnhtml-box {
+		.code-container code {
+			position: relative;
+			left: -150px;
+		}
+	}
 }
