@@ -41,7 +41,7 @@
         <p>HTML (Hypertext Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables. As the title suggests, this article will give you a basic understanding of HTML and its functions.</p>
         <p>"Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.</p>
         
-        <h3>So what is HTML ?</h3>
+        <h2>So what is HTML ?</h2>
         <p>HTML is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on. </p>
         <p>This is the basic template or barebone structure of HTML.</p>
         <div class="code-container">
@@ -78,7 +78,7 @@
         </ol>
         </div>
         &nbsp;
-        <h4>Anatomy of an HTML element</h4>    
+        <h2>Anatomy of an HTML element</h2>    
         &nbsp;
         <figure class="image-container">
             <img src="../img/HTML Element.png" alt="An HTML element">
@@ -93,9 +93,102 @@
             <li><span class="bold-text">The element:</span> The opening tag, the closing tag, and the content together comprise the element.</li>
         </ol>
         </div>
-        
+        <h2>Marking up text</h2>
+        <p>This section will cover some of the essential HTML elements you'll use for marking up the text.</p>
+        <h3>Headings</h3>
+        <p>Heading elements allow you to specify that certain parts of your content are headings — or subheadings. In the same way that a book has the main title, chapter titles, and subtitles, an HTML document can too. HTML contains 6 heading levels, &lt;h1> – &lt;h6>, although you'll commonly only use 3 to 4 at most. h1 is the largest heading tag and h6 is the smallest one. So <strong>h1</strong> is used for most important heading and <strong>h6</strong> is used for least important.</p>
+        <div class="code-container">
+            <pre>
+                <code>
+                    <span>&lt;h1>My main title&lt;/h1></span>
+                    <span>&lt;h2>My top level heading&lt;/h2></span>
+                    <span>&lt;h3>My subheading&lt;/h3></span>
+                    <span>&lt;h4>My sub-subheading&lt;/h4></span>
+                    <span>&lt;h5>Not so important sub-heading&lt;/h5></span>
+                    <span>&lt;h6>Least important sub-heading&lt;/h6></span>
+                </code>
+            </pre>
+        </div> 
+        <p>This will output the below :   
+            <pre class="output-style">
+            <!-- 6 heading levels: -->
+            <h1>My main title</h1>
+            <h2>My top level heading</h2>
+            <h3>My subheading</h3>
+            <h4>My sub-subheading</h4>
+            <h5>Not so important sub-heading</h5>
+            <h6>Least important sub-heading</h6>
+        </pre>
+        </p>
 
-
+        <h3>Paragraphs</h3>
+        <p>This tag defines a paragraph of text. It is a block-level element and always starts on a new line. </p>
+        <div class="code-container">
+            <pre>
+                <code>
+                    <span>&lt;p>This is first paragraph.&lt;/p></span>
+                    <span>&lt;p>This is second paragraph.&lt;/p></span>
+                    <span>&lt;p>This is third paragraph.&lt;/p></span>
+                </code>
+            </pre>
+        </div> 
+        <p>This will output the below : 
+            <!-- 3 paragraph's : -->
+        <pre class="output-style">
+            <p>This is first paragraph.</p>  
+            <p>This is second paragraph.</p>  
+            <p>This is third paragraph.</p>     
+        </pre> 
+        </p>
+           
+        <h3>Lists</h3>
+        <p>HTML Lists are used to specify lists of information. All lists may contain one or more list elements. There are three different types of HTML lists:</p>
+        <ol>
+            <li>Ordered List or Numbered List (ol)</li>
+            <p>In the ordered HTML lists, all the list items are marked with numbers by default. It is known as numbered list also. The ordered list starts with &lt;ol> tag and the list items start with &lt;li> tag.
+            </p>
+            <li>Unordered List or Bulleted List (ul)</li>
+            <p>In HTML Unordered list, all the list items are marked with bullets. It is also known as bulleted list also. The Unordered list starts with &lt;ul> tag and list items start with the &lt;li> tag.</p>
+            <li>Description List or Definition List (dl)</li>
+            <p>HTML Description list is also a list style which is supported by HTML and XHTML. It is also known as definition list where entries are listed like a dictionary or encyclopedia.</p>
+            <p>The definition list is very appropriate when you want to present glossary, list of terms or other name-value list.</p>
+            <p>The HTML definition list contains following three tags:</p>
+            <ol>
+                <li><span class="bold-text">
+                    &lt;dl> tag
+                </span>defines the start of the list.
+                </li>
+                <li>
+                    <span class="bold-text">
+                        &lt;dt> tag
+                    </span>defines a term.
+                </li>
+                <li>
+                    <span class="bold-text">
+                        &lt;dd> tag
+                    </span> defines the term definition (description).
+                </li>
+            </ol>
+        </ol>
+        <div class="code-container">
+            <pre>
+                <code>
+                </code>
+            </pre>
+        </div>
+        <p>This will output the below : 
+            <!-- 4 definitions : -->
+            <dl>  
+                <dt>Aries</dt>  
+                <dd>-One of the 12 horoscope sign.</dd>  
+                <dt>Bingo</dt>  
+                <dd>-One of my evening snacks</dd>  
+               <dt>Leo</dt>  
+               <dd>-It is one of the 12 horoscope sign.</dd>  
+                <dt>Oracle</dt>  
+                <dd>-It is a multinational technology corporation.</dd>   
+              </dl>  
+        </p> 
 
 
 
