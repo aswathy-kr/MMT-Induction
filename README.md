@@ -34,7 +34,8 @@ The list of things you need to use the software and how to install them.
 
 Aswathy K Raj
 
-Project Link: https://github.com/aswathy-kr/MMT-Induction
+Website URL : https://aswathy-kr.github.io/MMT-Induction/
+Github Repo: https://github.com/aswathy-kr/MMT-Induction
 
 ## Version History
 

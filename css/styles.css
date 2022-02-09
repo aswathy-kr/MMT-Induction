@@ -180,7 +180,7 @@ header {
 
 @media screen and (max-width: 720px) {
   .container, .nav-container, #social-icons {
-    width: 100%; }
+    width: 90%; }
   .nav-container {
     height: 100px;
     padding-top: 8px;
