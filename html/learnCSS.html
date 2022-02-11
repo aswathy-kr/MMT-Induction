@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/styles.css" type="text/css">
-    <!-- <meta http-equiv="refresh" content="5; url=http://example.com"> -->
+    <link rel="stylesheet" href="../css/learnHtml.css" type="text/css">
     <title>Home | FrontEnd Journey</title>
 
 </head>
@@ -35,7 +35,60 @@
                 </ul>
         </nav>
     </header>
-    <main>
+    <main class="container learnhtml-box">
+        <section class="content">
+            <h2>CSS: Cascading Style Sheets</h2>
+            <p>Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to simplify the process of making web pages presentable. CSS handles the look and feel part of a web page. Using CSS, you can control the color of the text, the style of fonts, the spacing between paragraphs, how columns are sized and laid out, what background images or colors are used, layout designs,variations in display for different devices and screen sizes as well as a variety of other effects.</p>
+            <p>The browser will style HTML documents using an internal stylesheet. This ensures that headings are larger than normal text, links are highlighted and structures such as tables and lists are understandable. However, the web would be a boring place if all websites looked like that. Using CSS you can control exactly how HTML elements look in the browser, presenting your markup using whatever design you like. </p>
+
+            <h2>So what is CSS ?</h2>
+            <p>CSS is a rule-based language — you define rules specifying groups of styles that should be applied to particular elements or groups of elements on your web page. For example "I want the main heading on my page to be shown as large red text."</p>
+            <p>The following code shows a very simple CSS rule that would achieve the styling described above:</p>
+            <div class="code-container">
+            <pre>
+                <code> 
+                    h1 {
+                        color: red;
+                        font-size: 5em;
+                    } 
+                </code>
+            </pre>
+            </div>
+            <p>The rule opens with a <em>selector</em> . This <em>selects</em> the HTML element that we are going to style. In this case we are styling level one headings (h1).</p>
+            <p>We then have a set of curly braces { }. Inside those will be one or more <strong>declarations</strong>, which take the form of <strong>property</strong> and <strong>value</strong> pairs. Each pair specifies a property of the element(s) we are selecting, then a value that we'd like to give the property. Before the colon, we have the property, and after the colon, the value. CSS properties have different allowable values, depending on which property is being specified. A CSS stylesheet will contain many such rules, written one after the other.</p>
+
+            <h2>Adding CSS to our document</h2>
+            <p>The very first thing we need to do is to tell the HTML document that we have some CSS rules we want it to use. There are three different ways to apply CSS to an HTML document that you'll commonly come across, however, for now, we will look at the most usual and useful way of doing so — linking CSS from the head of your document.
+            </p>
+            <p>Using a text editor, paste the lines of CSS (above) into a new file. Save the file as style.css in a directory named styles.</p>
+            <p>To make the code work, we  need to apply this CSS (above) to your HTML document. Otherwise, the styling won't change the appearance of the HTML.</p>
+
+            <div class="list-items">
+                <ol>
+                    <li>Open your index.html file. Paste the following line in the head (between the &lt;head> and &lt;/head> tags):</li>
+                    <pre class="code-container">
+                        <code>
+                            &lt;link href="styles/style.css" rel="stylesheet">
+                        </code>
+                        
+                    </pre>
+                </ol>
+            </div>
+            <p>This <span class="bold-text">&lt;link></span> element tells the browser that we have a stylesheet, using the <em>rel</em> attribute, and the location of that stylesheet as the value of the <em>href</em> attribute.</p>
+
+            <h2>How does CSS actually work?</h2>
+            <p>When a browser displays a document, it must combine the document's content with its style information. It processes the document in a number of stages, which we've listed below. Bear in mind that this is a very simplified version of what happens when a browser loads a webpage, and that different browsers will handle the process in different ways. But this is roughly what happens.</p>
+            <div class="list-items">
+                <ol>
+                    <li>The browser loads the HTML (e.g. receives it from the network).</li>
+                    <li>It converts the HTML into a DOM (Document Object Model). The DOM represents the document in the computer's memory.</li>
+                    <li>The browser then fetches most of the resources that are linked to by the HTML document, such as embedded images and videos ... and linked CSS!</li>
+                    <li>The browser parses the fetched CSS, and sorts the different rules by their selector types into different "buckets", e.g. element, class, ID, and so on. Based on the selectors it finds, it works out which rules should be applied to which nodes in the DOM, and attaches style to them as required (this intermediate step is called a render tree).</li>
+                    <li>The render tree is laid out in the structure it should appear in after the rules have been applied to it.</li>
+                    <li>The visual display of the page is shown on the screen (this stage is called painting).</li>
+                </ol>
+            </div>
+            </section>
     </main>
     
     <footer>

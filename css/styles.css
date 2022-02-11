@@ -99,10 +99,11 @@ header {
     padding: 12px 18px;
     width: fit-content;
     color: seashell;
-    background-color: #219ebc; }
+    background-color: #ee6c4d;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4); }
   .content .start-btn:hover {
-    background-color: #f4f1de;
-    color: #219ebc; }
+    background-color: #219ebc;
+    color: seashell; }
   .content .block-quote {
     border-left: 4px solid #32c4c4;
     margin-left: 24px;
