@@ -1,9 +1,6 @@
 .div-bg {
   background-color: linen;
-  margin: 16px 0; }
-  .div-bg p {
-    margin: 8px 0;
-    padding-left: 8px; }
+  margin: 24px 0; }
 
 table {
   table-layout: fixed;
