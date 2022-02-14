@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <link rel="stylesheet" href="../css/learnHtml.css" type="text/css">
+    <link rel="stylesheet" href="../css/learnFlexbox.css" type="text/css">
     <!-- <meta http-equiv="refresh" content="5; url=http://example.com"> -->
     <title>Home | FrontEnd Journey</title>
 
@@ -30,12 +32,42 @@
                     <li>
                         <a href="./resources.html">Resources</a>
                     </li>
-
+                    <li>
+                        <a href="./projects.html">Projects</a>
+                    </li>
 
                 </ul>
         </nav>
     </header>
-    <main>
+    <main class="container learnhtml-box">
+        <section class="content">
+            <h2>Flexbox</h2>
+            <p>The <span class="bold-text">flexbox</span> or flexible box model in CSS is a one-dimensional layout model that has flexible and efficient layouts with distributed spaces among items to control their alignment structure ie., it is a layout model that provides an easy and clean way to arrange items within a container. Flexbox can be useful for creating small-scale layouts & is responsive and mobile-friendly. This is an approach to layout creation, alignment of elements and distribution of extra space.</p>
+            <div class="list-items"> 
+                <span class="bold-text">Features of flexbox :</span>
+            <ul> 
+                <li>A lot of flexibility is given.</li>
+                <li>Arrangement & alignment of items.</li>
+                <li>Proper spacing</li>
+                <li>Order & Sequencing of items.</li>
+                <li>Bootstrap 4 is built on top of the flex layout.</li>
+            </ul>
+            </div>
+
+            <h2>Why Do We Need Flexbox?</h2>
+            <p>Let me ask you a question first. How do we handle layouts in CSS?</p>
+            <p>Answer: by using floats, inline-blocks, absolute positioning and display: table. And do you know what these terms all have in common? Not a single one of them was meant for today’s layouts. Yes, flexbox is truly the first CSS layout tool. And our grouch might add: “The first one in twenty years!”.</p>
+            <p>Floats, tables and all other layout techniques soon to be dead will still come in handy over the next few years. However, every member of this “layout tools family” has some disadvantages when it comes to creating layouts. Those disadvantages arise from specifications that did not anticipate today’s layouts.</p>
+            <div class="list-items"> 
+                <span>Before the flexbox model, we had 4 layout modes:</span>
+            <ul>
+                <li><span class="bold-text">Block: </span>It is used to make sections in web pages.</li>
+                <li><span class="bold-text">Inline:</span> It is used for text.</li>
+                <li><span class="bold-text">Table:</span> It is used for two-dimensional table data.</li>
+                <li><span class="bold-text">Positioned:</span> It is used for the explicit position of an element.</li>
+            </ul>
+            <p></p>
+        </section>
     </main>
     
     <footer>
@@ -50,6 +82,7 @@
             <a href="../index.html">Home</a>
             <a class="active" href="./learnings.html">Learnings</a>
             <a href="./resources.html">Resources</a>
+            <a href="./projects.html">Projects</a>
         </div>
         <br />
         <div class="copy-rights">

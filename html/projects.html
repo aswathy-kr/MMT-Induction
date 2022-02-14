@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <link rel="stylesheet" href="../css/projects.css" type="text/css">
     <!-- <meta http-equiv="refresh" content="5; url=http://example.com"> -->
     <title>Home | FrontEnd Journey</title>
 
@@ -25,21 +26,48 @@
                         <a href="../index.html">Home</a>
                     </li>
                     <li>
-                        <a class="active" href="./learnings.html">Learnings</a>
+                        <a href="./learnings.html">Learnings</a>
                     </li>
                     <li>
                         <a href="./resources.html">Resources</a>
                     </li>
                     <li>
-                        <a href="./projects.html">Projects</a>
+                        <a class="active" href="#">Projects</a>
                     </li>
 
                 </ul>
         </nav>
     </header>
-    <main>
-        <p>JavaScript is the programming language that you use to add interactive features to your website. Some examples could be games, things that happen when buttons are pressed or data is entered in forms, dynamic styling effects, animation, and much more.</p>
-
+    <main class="container"> 
+    
+        <!-- <section class="projects-box"> -->
+        <article class="intro">
+            <p>
+                Below are some of my projects : 
+            </p>
+        </article>
+        <section class="projects-box"> 
+        <article class="content content-border">
+            <h3>Drink Water</h3>
+            <p class="for-p">This application helps you to track your daily water intake. You can add water in amounts of 250ml, 500ml and 1000ml. </p>
+            <p class="for-p">Tech used: HTML, CSS, JS</p>
+            <div class="btn-list">
+                <a class="start-btn" href="https://aswathy-kr.github.io/frontend-projects/Drink%20Water/" target="_blank">Live Demo</a>
+                <a class="start-btn" href="https://github.com/aswathy-kr/frontend-projects/tree/main/Drink%20Water" target="_blank">Source Code</a>
+            </div>
+            
+          </article>
+          <article class="content content-border">
+            <h3>Random Choice Picker</h3>
+            <p>This application allows you to input a string of words seperated by commas. On pressing enter, the words will be shown as seperate keywords below and the application will randomly pick out a word for you.</p>
+            <p class="for-p">Tech used: HTML, CSS, JS</p>
+            <div class="btn-list">
+                <a class="start-btn" href="https://aswathy-kr.github.io/frontend-projects/Random%20Choice%20Picker/">Live Demo</a>
+                <a class="start-btn" href="https://github.com/aswathy-kr/frontend-projects/tree/main/Random%20Choice%20Picker">Source Code</a>
+            </div>
+            
+          </article>
+        </section>
     </main>
     
     <footer>
@@ -52,9 +80,9 @@
         <br />
         <div class="f-links">
             <a href="../index.html">Home</a>
-            <a class="active" href="./learnings.html">Learnings</a>
+            <a href="./learnings.html">Learnings</a>
             <a href="./resources.html">Resources</a>
-            <a href="./projects.html">Projects</a>
+            <a class="active" href="#">Projects</a>
         </div>
         <br />
         <div class="copy-rights">

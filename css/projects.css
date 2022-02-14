@@ -1,0 +1,30 @@
+.intro {
+  position: relative;
+  top: 100px;
+  display: block; }
+
+.projects-box {
+  position: relative;
+  top: 100px;
+  margin-bottom: 150px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px 48px; }
+  .projects-box .btn-list {
+    padding: 12px 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 12px; }
+
+@media screen and (max-width: 720px) {
+  .intro {
+    position: relative;
+    top: 130px; }
+  .container {
+    width: 90%; }
+  .projects-box {
+    position: relative;
+    top: 150px; }
+  .btn-list {
+    flex-wrap: wrap; } }
