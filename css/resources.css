@@ -22,10 +22,16 @@
     color: #212121;
     font-size: 18px;
     margin: 18px 0; }
-  .one-cheatsheet .read-more {
-    font-size: 16px;
+  .one-cheatsheet .start-btn {
+    border: 2px solid seashell;
+    border-radius: 10px;
+    font-size: 18px;
     text-decoration: none;
-    padding: 12px 18px; }
+    padding: 12px 18px;
+    width: fit-content;
+    color: seashell;
+    background-color: #ee6c4d;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4); }
 
 @media screen and (max-width: 720px) {
   .blog-heading {

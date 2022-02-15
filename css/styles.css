@@ -130,9 +130,10 @@ header {
   z-index: 0; }
 
 .logoImg {
-  width: 100%;
-  height: auto;
-  margin: 12px 0; }
+  width: 150px;
+  height: 150px;
+  margin: 12px 0;
+  align-self: center; }
 
 #social-icons {
   text-align: center;
