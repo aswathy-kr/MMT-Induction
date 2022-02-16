@@ -216,13 +216,10 @@ header {
 	text-align: center;
 	margin-top: 50px;
 
-	.fa-facebook {
-		@include iconBorder($borderSize, #3b5998);
-	}
 	.fa-twitter {
 		@include iconBorder($borderSize, #00aced);
 	}
-	.fa-instagram {
+	.fa-github {
 		@include iconBorder($borderSize, #833ab4);
 	}
 	.fa-linkedin {

@@ -138,14 +138,6 @@ header {
 #social-icons {
   text-align: center;
   margin-top: 50px; }
-  #social-icons .fa-facebook {
-    border: 2px solid #3b5998;
-    color: #3b5998;
-    border-radius: 100%;
-    font-size: 28px;
-    line-height: 40px;
-    margin: 5px;
-    width: 44px; }
   #social-icons .fa-twitter {
     border: 2px solid #00aced;
     color: #00aced;
@@ -154,7 +146,7 @@ header {
     line-height: 40px;
     margin: 5px;
     width: 44px; }
-  #social-icons .fa-instagram {
+  #social-icons .fa-github {
     border: 2px solid #833ab4;
     color: #833ab4;
     border-radius: 100%;
