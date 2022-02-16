@@ -42,41 +42,42 @@
         <section class="blog-heading">
             <h1>Web Development Journey Resources</h1>
         </section>
-        <!-- <div id="myModal" class="modal" hidden>
+
+         <div id="myModal" class="modal">
             <div class="modal-content">
               <span class="close">&times;</span>
-              <p>Some text in the Modal..</p>
-              <iframe src="https://websitesetup.org/wp-content/uploads/2019/11/wsu-css-cheat-sheet-gdocs.pdf" title="description" target="_parent"></iframe>
-            </div>
-          
-          </div> -->
+              <iframe name="iframe_box" title="Display Cheatsheets" height="500px" width="100%" target="_self">
+                Sorry your browser does not support inline frames.
+              </iframe>
+            </div>      
+          </div>
         
         <section class="cheatsheets-box">
             <div class="one-cheatsheet">
                 <h2>HTML Cheatsheet</h2>
                 <p>HTML Cheatsheet for beginners</p>
-                <a class="start-btn" href="https://websitesetup.org/wp-content/uploads/2019/10/WSU-HTML-Cheat-Sheet.pdf" target="_blank">Read more</a>
+                <a class="start-btn" href="http://www.simplehtmlguide.com/cheatsheet.php" target="iframe_box">Read more</a>
                 </div>
 
             <div class="one-cheatsheet">
                 <h2>CSS Cheatsheet</h2>
                 <p>CSS Cheatsheet for beginners</p>
-                <a class="start-btn" href="https://websitesetup.org/wp-content/uploads/2019/11/wsu-css-cheat-sheet-gdocs.pdf" target="_blank">Read more</a>
+                <a class="start-btn" href="http://www.simplehtmlguide.com/csscheatsheet.php" target="iframe_box">Read more</a>
             </div>
             <div class="one-cheatsheet">
                 <h2>Grid Cheatsheet</h2>
                 <p>Grid Cheatsheet for beginners</p>
-                <a class="start-btn" href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">Read  more</a>
+                <a class="start-btn" href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="iframe_box">Read  more</a>
             </div>
             <div class="one-cheatsheet">
                 <h2>Flexbox Cheatsheet</h2>
                 <p>Flexbox Cheatsheet for beginners</p>
-                <a class="start-btn" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Read  more</a>
+                <a class="start-btn" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="iframe_box">Read  more</a>
             </div>
             <div class="one-cheatsheet">
                 <h2>Javascript Cheatsheet</h2>
                 <p>Javascript Cheatsheet for beginners</p>
-                <a class="start-btn" href="https://websitesetup.org/wp-content/uploads/2020/09/Javascript-Cheat-Sheet.pdf" target="_blank">Read  more</a>
+                <a class="start-btn" href="https://www.codewithharry.com/blogpost/javascript-cheatsheet" target="iframe_box">Read  more</a>
             </div>
             
 
@@ -102,18 +103,26 @@
         </div>
         </div>
     </footer>
-<!-- <script>
-    document.querySelector('.start-btn').onclick = function(){
-        myModal.hidden = false;
-    }
+<script>
+    let modal = document.querySelector('#myModal');
+    let startBtns = document.querySelectorAll('.start-btn');
+    
+    startBtns.forEach(button => {
+        button.onclick = function(){ 
+            setTimeout(() => modal.style.display = "block",2500)}
+    })
+    
 
     let closeBtn = document.querySelector('.close');
     closeBtn.onclick = function(){
-        console.log('clicked');
-        document.querySelector('#myModal').hidden = true;
+        modal.style.display = "none";
     }
-    console.log(closeBtn);
-</script> -->
+    
+    window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }}
+</script>
 </body>
 
 </html>
