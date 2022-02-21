@@ -1,130 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/styles.css" type="text/css">
-    <link rel="stylesheet" href="../css/resources.css" type="text/css">
-    <title>Resources | FrontEnd Journey</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="../css/styles.css" type="text/css" />
+		<link rel="stylesheet" href="../css/resources.css" type="text/css" />
+		<title>Resources | FrontEnd Journey</title>
+	</head>
 
-</head>
+	<body>
+		<header>
+			<nav class="nav-container">
+				<div class="logo-container">
+					<img src="../img/logo.png" class="logo" />
+					<h1>WebDev Journey</h1>
+				</div>
 
-<body>
-    <header>
+				<ul>
+					<li>
+						<a href="../index.html">Home</a>
+					</li>
+					<li>
+						<a href="./learnings.html">Learnings</a>
+					</li>
+					<li>
+						<a class="active" href="#">Resources</a>
+					</li>
+					<li>
+						<a href="./projects.html">Projects</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="container">
+			<section class="blog-heading">
+				<h1>Web Development Journey Resources</h1>
+			</section>
 
-        <nav class="nav-container">
-                <div class="logo-container">
-                    <img src="../img/logo.png" class="logo">
-                    <h1>WebDev Journey</h1>
-                </div>
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<iframe
+						name="iframe_box"
+						title="Display Cheatsheets"
+						height="400px"
+						width="100%"
+						target="_self"
+					>
+						Sorry your browser does not support inline frames.
+					</iframe>
+				</div>
+			</div>
 
+			<section class="cheatsheets-box">
+				<div class="one-cheatsheet">
+					<h2>HTML Cheatsheet</h2>
+					<p>HTML Cheatsheet for beginners</p>
+					<a
+						class="start-btn"
+						href="https://www.simplehtmlguide.com/cheatsheet.php"
+						target="iframe_box"
+						>Read more</a
+					>
+				</div>
 
-                <ul>
-                    <li>
-                        <a href="../index.html">Home</a>
-                    </li>
-                    <li>
-                        <a  href="./learnings.html">Learnings</a>
-                    </li>
-                    <li>
-                        <a class="active" href="#">Resources</a>
-                    </li>
-                    <li>
-                        <a href="./projects.html">Projects</a>
-                    </li>
-                </ul>
-        </nav>
-    </header>
-    <main class="container">
+				<div class="one-cheatsheet">
+					<h2>CSS Cheatsheet</h2>
+					<p>CSS Cheatsheet for beginners</p>
+					<a
+						class="start-btn"
+						href="https://www.simplehtmlguide.com/csscheatsheet.php"
+						target="iframe_box"
+						>Read more</a
+					>
+				</div>
+				<div class="one-cheatsheet">
+					<h2>Grid Cheatsheet</h2>
+					<p>Grid Cheatsheet for beginners</p>
+					<a
+						class="start-btn"
+						href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+						target="iframe_box"
+						>Read more</a
+					>
+				</div>
+				<div class="one-cheatsheet">
+					<h2>Flexbox Cheatsheet</h2>
+					<p>Flexbox Cheatsheet for beginners</p>
+					<a
+						class="start-btn"
+						href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+						target="iframe_box"
+						>Read more</a
+					>
+				</div>
+				<div class="one-cheatsheet">
+					<h2>Javascript Cheatsheet</h2>
+					<p>Javascript Cheatsheet for beginners</p>
+					<a
+						class="start-btn"
+						href="https://www.codewithharry.com/blogpost/javascript-cheatsheet"
+						target="iframe_box"
+						>Read more</a
+					>
+				</div>
+			</section>
+		</main>
 
-        <section class="blog-heading">
-            <h1>Web Development Journey Resources</h1>
-        </section>
+		<footer>
+			<div id="social-icons">
+				<a href="https://twitter.com/AswathyAchizz" target="_blank"
+					><i class="fa fa-twitter" aria-hidden="true"></i
+				></a>
+				<a href="https://github.com/aswathy-kr?tab=repositories" target="_blank"
+					><i class="fa fa-github" aria-hidden="true"></i
+				></a>
+				<a
+					href="https://www.linkedin.com/in/aswathy-k-raj-a43209127/"
+					target="_blank"
+					><i class="fa fa-linkedin" aria-hidden="true"></i
+				></a>
+			</div>
+			<br />
+			<div class="f-links">
+				<a href="../index.html">Home</a>
+				<a href="./learnings.html">Learnings</a>
+				<a class="active" href="#">Resources</a>
+				<a href="./projects.html">Projects</a>
+			</div>
+			<br />
+			<div class="copy-rights">
+				<p>
+					Copyrights &copy;
+					<script>
+						document.write(new Date().getFullYear());
+					</script>
+					All rights reserved.
+				</p>
+			</div>
+		</footer>
+		<script>
+			let modal = document.querySelector("#myModal");
+			let startBtns = document.querySelectorAll(".start-btn");
 
-         <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <iframe name="iframe_box" title="Display Cheatsheets" height="500px" width="100%" target="_self">
-                Sorry your browser does not support inline frames.
-              </iframe>
-            </div>      
-          </div>
-        
-        <section class="cheatsheets-box">
-            <div class="one-cheatsheet">
-                <h2>HTML Cheatsheet</h2>
-                <p>HTML Cheatsheet for beginners</p>
-                <a class="start-btn" href="https://www.simplehtmlguide.com/cheatsheet.php" target="iframe_box">Read more</a>
-                </div>
+			function handleOutsideClick(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+					window.removeEventListener("click", handleOutsideClick);
+				}
+			}
 
-            <div class="one-cheatsheet">
-                <h2>CSS Cheatsheet</h2>
-                <p>CSS Cheatsheet for beginners</p>
-                <a class="start-btn" href="https://www.simplehtmlguide.com/csscheatsheet.php" target="iframe_box">Read more</a>
-            </div>
-            <div class="one-cheatsheet">
-                <h2>Grid Cheatsheet</h2>
-                <p>Grid Cheatsheet for beginners</p>
-                <a class="start-btn" href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="iframe_box">Read  more</a>
-            </div>
-            <div class="one-cheatsheet">
-                <h2>Flexbox Cheatsheet</h2>
-                <p>Flexbox Cheatsheet for beginners</p>
-                <a class="start-btn" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="iframe_box">Read  more</a>
-            </div>
-            <div class="one-cheatsheet">
-                <h2>Javascript Cheatsheet</h2>
-                <p>Javascript Cheatsheet for beginners</p>
-                <a class="start-btn" href="https://www.codewithharry.com/blogpost/javascript-cheatsheet" target="iframe_box">Read  more</a>
-            </div>
-            
+			startBtns.forEach((button) => {
+				button.onclick = function () {
+					modal.style.display = "block";
+					window.addEventListener("click", handleOutsideClick);
+				};
+			});
 
-        </section>
-    </main>
-    
-    <footer>
-        <div id="social-icons">
-            <a href="https://twitter.com/AswathyAchizz" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="https://github.com/aswathy-kr?tab=repositories" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/aswathy-k-raj-a43209127/" target="_blank"><i class='fa fa-linkedin' aria-hidden="true"></i></a>
-        </div>
-        <br />
-        <div class="f-links">
-            <a href="../index.html">Home</a>
-            <a href="./learnings.html">Learnings</a>
-            <a class="active" href="#">Resources</a>
-            <a href="./projects.html">Projects</a>
-        </div>
-        <br />
-        <div class="copy-rights">
-            <p>Copyrights &copy; <script>document.write(new Date().getFullYear())</script> All rights reserved.</p>
-        </div>
-        </div>
-    </footer>
-<script>
-    let modal = document.querySelector('#myModal');
-    let startBtns = document.querySelectorAll('.start-btn');
-    
-    startBtns.forEach(button => {
-        button.onclick = function(){ 
-            modal.style.display = "block";
-            //setTimeout(() => modal.style.display = "block",2500)}
-    }})
-    
-
-    let closeBtn = document.querySelector('.close');
-    closeBtn.onclick = function(){
-        modal.style.display = "none";
-    }
-    
-    window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }}
-</script>
-</body>
-
+			let closeBtn = document.querySelector(".close");
+			closeBtn.onclick = function () {
+				modal.style.display = "none";
+			};
+		</script>
+	</body>
 </html>
-
